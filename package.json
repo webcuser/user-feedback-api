@@ -1,0 +1,13 @@
+{
+  "name": "user-feedback-api",
+  "version": "1.0.0",
+  "description": "API for collecting user feedback and suggestions",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
+  }
+}
