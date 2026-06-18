@@ -1,6 +1,15 @@
 // Backend server configuration
-const app = require('express')();
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 const feedbackRoutes = require('./routes/index').feedbackRoutes;
+
+const app = express();
+
+// Middleware configuration
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/api', feedbackRoutes);
 
